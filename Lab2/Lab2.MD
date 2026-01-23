@@ -10,7 +10,7 @@ IaaS Target Architecture Diagram
 
 
  
-![IaaS Target Architecture Diagram](IaaS Target Architecture Diagram.jpg)
+![IaaS Target Architecture Diagram](IaaSTargetArchitectureDiagram.jpg)
 
 Describe how this application can be deployed in the cloud using IaaS infrastructure
 
@@ -64,7 +64,7 @@ Question#2:
 Q2 (PaaS) – Deploy using Platform as a Service
 PaaS Target Architecture Diagram
 
- ![PaaS Target Architecture Diagram](PaaS Target Architecture Diagram.jpg)
+ ![PaaS Target Architecture Diagram](PaaSTargetArchitectureDiagram.jpg)
 
 
 Describe how this application can be deployed in the cloud using PaaS infrastructure.
