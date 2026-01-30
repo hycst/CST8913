@@ -1,8 +1,0 @@
-```mermaid
-flowchart LR
-    User --> Firewall
-    Firewall --> WebServer
-    WebServer --> Database
-    WebServer --> FileStorage
-    WebServer --> EmailServer
-```
