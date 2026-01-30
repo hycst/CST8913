@@ -1,7 +1,7 @@
 
 Migration Strategy Overview
 
-I am planing to apply a progress migration approach is recommended to minimize risk and downtime:
+I am planing to apply a hybrid migration approach is recommended to minimize risk and downtime:
 
 Start with Lift-and-Shift (Rehosting) for critical workloads
 Gradually rebuild application to service which runnong on cloud
