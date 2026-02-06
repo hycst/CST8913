@@ -301,3 +301,12 @@ The proposal of Discovery and Assessment will make sure:
 - Migration with risk controll  
 
 This Anslysis - Solition methodology will enables the organizations to migrate current applicaitons Microsofrt Azure,  with minimal downtime.
+
+
+# Reference
+[1] Microsoft, “Cloud Adoption Framework for Azure: Plan your cloud migration,” Microsoft Learn, 2024. [Online]. Available: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/
+
+[2] Amazon Web Services, “AWS Cloud Migration: Strategy, Planning, and Process,” AWS Documentation, 2023. [Online]. Available: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-guide/
+
+[3] Google Cloud, “Cloud Migration Best Practices,” Google Cloud Architecture Center, 2024. [Online]. Available: https://cloud.google.com/architecture/migration-to-gcp-best-practices
+
