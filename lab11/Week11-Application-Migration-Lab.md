@@ -136,3 +136,52 @@ flowchart TD
 | Data Sensitivity | High                  |
 | Licensing        | SQL Server required   |
 | Security         | Strict firewall rules |
+
+
+
+
+
+
+#### S  Task 4 – Validation & Optimization
+Recommended Azure VM Sizes
+
+| Tier | Size         |
+| ---- | ------------ |
+| Web  | B2s / D2s_v3 |
+| App  | D2s_v3       |
+| SQL  | D4s_v3+      |
+
+
+
+#### SOptimization Opportunities
+
+| Component | Azure Replacement          |
+| --------- | -------------------------- |
+| LB01      | Azure Application Gateway  |
+| SQL01     | Azure SQL Managed Instance |
+| Backups   | Azure Backup               |
+| Firewall  | NSG + Azure Firewall       |
+
+
+```mermaid
+flowchart LR
+    SQL01 --> Rehost[SQL on VM]
+    SQL01 --> MI[Azure SQL MI]
+    SQL01 --> DB[Azure SQL DB]
+```
+
+#### SQL Migration Options
+
+| Option | Pros               | Cons             |
+| ------ | ------------------ | ---------------- |
+| Rehost | Easy               | Less optimized   |
+| SQL MI | High compatibility | Moderate cost    |
+| SQL DB | Fully managed      | Requires changes |
+
+
+✔ Recommended: Azure SQL Managed Instance
+
+#### SLA Validation
+-   Azure provides high availability
+-   Migration must use staged waves
+-   Downtime controlled via sequencing
