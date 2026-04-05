@@ -89,3 +89,50 @@ Assessment Configuration
 | Pricing Model       | Pay-as-you-go        | Flexibility                |
 | Licensing           | Azure Hybrid Benefit | Cost savings               |
 
+#### Task 3 – Dependency Analysis
+Dependency Flow
+
+```mermaid
+flowchart TD
+    WEB01 --> APP01
+    WEB02 --> APP01
+    APP01 --> SQL01
+    SQL01 --> Backup
+    WEB01 --> DNS
+    WEB02 --> DNS
+    APP01 --> Firewall
+
+```
+
+
+
+####  Key Dependencies
+
+
+| Dependency     | Port/Protocol | Purpose          |
+| -------------- | ------------- | ---------------- |
+| HTTP/HTTPS     | 80/443        | User access      |
+| RDP            | 3389          | Admin access     |
+| SQL            | 1433          | DB communication |
+| DNS            | 53            | Name resolution  |
+| SMB            | 445           | File access      |
+| WinRM          | 5985/5986     | Management       |
+| Health probes  | Custom        | Load balancing   |
+| Backup traffic | Varies        | Data protection  |
+
+
+
+#### Noise Filtering
+-   Monitoring traffic
+-   Background OS processes
+-   Temporary/test connections
+
+#### Business Requirements
+
+| Requirement      | Value                 |
+| ---------------- | --------------------- |
+| Criticality      | High                  |
+| Downtime         | ≤ 1 hour              |
+| Data Sensitivity | High                  |
+| Licensing        | SQL Server required   |
+| Security         | Strict firewall rules |
