@@ -32,3 +32,22 @@ flowchart LR
     WEB02 --> APP01
     APP01 --> SQL01[(SQL Server 2017)]
     SQL01 --> Backup[(Nightly Backup)]
+```
+####  3. Target Architecture (Azure)
+```mermaid
+flowchart LR
+    Users --> AGW[Azure Application Gateway]
+    AGW --> WEB01_AZ
+    AGW --> WEB02_AZ
+    WEB01_AZ --> APP01_AZ
+    WEB02_AZ --> APP01_AZ
+    APP01_AZ --> SQL_MI[(Azure SQL Managed Instance)]
+    SQL_MI --> Backup_AZ[(Azure Backup)]
+```
+#### Task 1 – Discovery Strategy
+Approach: Hybrid (Agentless + Agent-Based)
+
+| Method      | Usage              | Justification         |
+| ----------- | ------------------ | --------------------- |
+| Agentless   | VMware VMs         | Fast, no installation |
+| Agent-based | Dependency mapping | Deep visibility       |
