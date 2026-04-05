@@ -51,3 +51,26 @@ Approach: Hybrid (Agentless + Agent-Based)
 | ----------- | ------------------ | --------------------- |
 | Agentless   | VMware VMs         | Fast, no installation |
 | Agent-based | Dependency mapping | Deep visibility       |
+
+
+#### Appliance Requirement
+1 Azure Migrate appliance
+
+-    Covers entire VMware environment
+-    Simplifies management
+
+
+#### Required Credentials
+
+| Purpose            | Credentials              |
+| ------------------ | ------------------------ |
+| Software Inventory | vCenter + OS credentials |
+| SQL Discovery      | SQL admin + Windows      |
+| Dependency Mapping | OS admin                 |
+
+
+#### Discovery Best Practices
+-   Run discovery for 14 days minimum
+-   Use least privilege access
+-   Validate results with stakeholders
+
