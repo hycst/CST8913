@@ -241,3 +241,38 @@ flowchart TD
     RestoreDB --> RevertDNS[Revert DNS]
     RevertDNS --> RedirectTraffic[Redirect to On-Prem]
 ```
+
+
+
+### Task 6 – Migration Waves
+### Migration Strategy
+| Wave   | Servers      | Reason              |
+| ------ | ------------ | ------------------- |
+| Wave 1 | WEB01, WEB02 | Stateless, low risk |
+| Wave 2 | APP01        | Depends on web tier |
+| Wave 3 | SQL01        | High risk, critical |
+
+
+### Justification
+-    Dependency-based sequencing ensures stability
+-    Database last minimizes risk
+-    Testing between waves ensures reliability
+
+#### Final Architecture Flow
+```mermaid
+flowchart LR
+    Users --> AGW
+    AGW --> WebTier
+    WebTier --> AppTier
+    AppTier --> DBTier
+```
+
+#### Conclusion
+
+This migration plan provides a structured, low-risk approach aligned with Azure best practices. By combining:
+
+-    Hybrid discovery
+-    Performance-based assessment
+-    Dependency-driven migration waves
+
+Tailwind Traders can successfully migrate within the 1-hour downtime constraint, while improving scalability, cost efficiency, and operational resilience.
