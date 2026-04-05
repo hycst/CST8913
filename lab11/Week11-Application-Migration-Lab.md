@@ -74,3 +74,18 @@ Approach: Hybrid (Agentless + Agent-Based)
 -   Use least privilege access
 -   Validate results with stakeholders
 
+
+
+####  Task 2 – Assessment Planning
+Assessment Configuration
+
+| Category            | Decision             | Justification              |
+| ------------------- | -------------------- | -------------------------- |
+| Assessment Type     | Production           | Business-critical workload |
+| Region              | East US 2            | Compliance + proximity     |
+| Performance History | 14–30 days           | Accurate sizing            |
+| Sizing Method       | Performance-based    | Cost optimization          |
+| Comfort Factor      | 1.3                  | Handles spikes             |
+| Pricing Model       | Pay-as-you-go        | Flexibility                |
+| Licensing           | Azure Hybrid Benefit | Cost savings               |
+
