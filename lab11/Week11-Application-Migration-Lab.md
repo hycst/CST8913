@@ -185,3 +185,59 @@ flowchart LR
 -   Azure provides high availability
 -   Migration must use staged waves
 -   Downtime controlled via sequencing
+
+
+
+
+
+### Task 5 – Migration Runbook
+####  Pre-Migration
+-    Complete assessment
+-    Prepare Azure environment (VNet, NSG)
+-    Configure Azure Migrate
+-    Perform test migration
+
+
+####   Migration Workflow
+```mermaid
+flowchart TD
+    Start --> Wave1[WEB Tier]
+    Wave1 --> Wave2[APP Tier]
+    Wave2 --> Wave3[SQL Tier]
+    Wave3 --> Validation
+```
+
+####   Execution Steps
+####   Wave 1 – Web Tier
+-    Migrate WEB01, WEB02
+-    Validate frontend
+####   Wave 2 – App Tier
+-    Migrate APP01
+-    Validate API
+####   Wave 3 – Database Tier
+-    Migrate SQL01
+-    Validate data integrity
+####   DNS Updates
+-    Reduce TTL before migration
+-    Update DNS to Azure endpoints
+####   Connection String Updates
+-    Update DB connection strings
+-    Validate connectivity
+####   Load Balancer Setup
+-    Configure Application Gateway
+-    Enable health probes
+####   Post-Migration Validation
+
+    ✔ Application accessible
+    ✔ Database functional
+    ✔ Performance acceptable
+    ✔ Backup working
+    ✔ Security rules applied
+
+####  Back-Out Plan
+```mermaid
+flowchart TD
+    Failure --> RestoreDB[Restore Database]
+    RestoreDB --> RevertDNS[Revert DNS]
+    RevertDNS --> RedirectTraffic[Redirect to On-Prem]
+```
