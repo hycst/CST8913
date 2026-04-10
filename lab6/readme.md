@@ -1,4 +1,4 @@
-###  26W_CST8913_010 Cloud Migration
+##  26W_CST8913_010 Cloud Migration
 
  
 
@@ -8,7 +8,7 @@
 
 ###  Student:  Hesheng Yang, 041094882
 
- 
+# 
 
  
 
@@ -30,6 +30,7 @@
 
 6) Reference
 
+#
 ###  1) Cloud Resource Comparison Table (AWS vs Azure vs Google Cloud)
 
 ####  Core Compute & Storage
@@ -139,6 +140,8 @@ As my research, all thes three service providers offer the same "core building s
 #### DevOps tools for CI/CD and Infrastructure as Code.
 As we talking about the biggest difference is, is usually by service name, how components are grouped, and default integrations, rather than whether the capability exists.
 
+#
+
 ### 3) Key Differences
 #### 3.1) Naming + product packaging
 
@@ -158,6 +161,8 @@ Example: "Notifications" → AWS SNS is broad, while GCP commonly uses FCM for p
 ##### Google Cloud often groups governance into "data platform" families (Dataplex).
 ##### AWS ties many governance/metadata pieces into analytics services (Glue catalog).
 
+#
+
 ###  4) Unique strengths
 As my research,
 
@@ -166,15 +171,19 @@ As my research,
 ##### Google Cloud: Which is strong in data analytics (BigQuery),  and, provides developer-friendly managed services.
 
 
-#### 5) Naming convention patterns, for AWS, Azure and Google Cloud
+#
+
+### 5) Naming convention patterns, for AWS, Azure and Google Cloud
+
 ##### VMs: EC2 ↔ Azure Virtual Machines ↔ Compute Engine
 ##### Object storage: S3 ↔ Blob Storage ↔ Cloud Storage
 ##### Kubernetes: EKS ↔ AKS ↔ GKE
 ##### Functions: Lambda ↔ Functions ↔ Cloud Functions
 ##### Data warehouse: Redshift ↔ Synapse ↔ BigQuery
- 
 
-### Reference:
+ #
+
+### 6) Reference:
 [1] Amazon Web Services, "AWS Documentation," Amazon Web Services. [Online]. Available: https://docs.aws.amazon.com/. [Accessed: Feb. 20, 2026].
 
 [2] Microsoft, "Azure Documentation," Microsoft Learn. [Online]. Available: https://learn.microsoft.com/azure/. [Accessed: Feb. 20, 2026].
