@@ -1,7 +1,8 @@
 # Lab 09 – Cloud Cost Estimation for Enterprise Application Migration  
 
-**Class:** CST8913 Cloud Migration  
-**Student:** Hesheng Yang  
+####   Class: CST8913 Cloud Migration  
+####   Professor: Islam Gomaa
+####   Student: Hesheng Yang  
 
 ---
 
