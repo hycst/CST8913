@@ -1,10 +1,11 @@
 
-CST 8913 Cloud Migration
-Lab 02 - IaaS/PaaS architecture
+#### CST 8913 Cloud Migration
+#### Lab 02 - IaaS/PaaS architecture
 
-Professor: Islam Gomaa
-Student: Hesheng Yang 041094882
+#### Professor: Islam Gomaa
+#### Student: Hesheng Yang 041094882
 
+#### Question#:
 Q1 (IaaS) – Deploy using Infrastructure as a Service
 IaaS Target Architecture Diagram
 
@@ -12,13 +13,13 @@ IaaS Target Architecture Diagram
  
 ![IaaS Target Architecture Diagram](IaaSTargetArchitectureDiagram.jpg)
 
-Describe how this application can be deployed in the cloud using IaaS infrastructure
+#### Describe how this application can be deployed in the cloud using IaaS infrastructure
 
-Services:
-•	Virtual Network (VPC/VNet), Subnets, Route tables
-•	Security Groups / NSGs (firewall rules)
-•	Public IP on Load Balancer, private IPs on VMs
-•	Monitoring/Logging (VM metrics, logs)
+#### Services:
+- 	Virtual Network (VPC/VNet), Subnets, Route tables
+-  Security Groups / NSGs (firewall rules)
+- 	Public IP on Load Balancer, private IPs on VMs
+-  Mnitoring/Logging (VM metrics, logs)
 
 IaaS  IaaS infrastructure Solution Description 
 (cloud components)
@@ -60,35 +61,35 @@ To be responsible for OS updates, hardening, scaling VMs, database maintenance, 
 
 
 
-Question#2:
+#### Question#2:
 Q2 (PaaS) – Deploy using Platform as a Service
 PaaS Target Architecture Diagram
 
  ![PaaS Target Architecture Diagram](PaaSTargetArchitectureDiagram.jpg)
 
 
-Describe how this application can be deployed in the cloud using PaaS infrastructure.
+####  Describe how this application can be deployed in the cloud using PaaS infrastructure.
 
-Services:
-•	Managed Identity / IAM roles
-•	Secrets Manager (Key Vault / Secret Manager)
-•	API Gateway (optional) for routing, auth, rate limits
-•	Observability (App Insights / Cloud Logging)
+#### Services:
+-	Managed Identity / IAM roles
+-	Secrets Manager (Key Vault / Secret Manager)
+-	API Gateway (optional) for routing, auth, rate limits
+-	Observability (App Insights / Cloud Logging)
 
-PaaS Ssolution: Deescription (cloud components)
+#### PaaS Ssolution: Deescription (cloud components)
 PaaS Front-End Hosting for React:
 It is used to host the React build as static content using a managed service (examples: Static Web App, App Service static, or CDN + Storage).
 
-PaaS Compute for Flask (Web App / Container App):
+#### PaaS Compute for Flask (Web App / Container App):
 It is used to deploy Flask as a managed web app (or container).
 
-Managed PostgreSQL (DBaaS):
+#### Managed PostgreSQL (DBaaS):
 It is ussed to manage Postgres service.
 
-Secrets Manager:
+#### Secrets Manager:
 It is used to store DB connection strings, API keys, and config securely (avoid hardcoding). The Flask app reads secrets at runtime.
 
-Private Networking
+#### Private Networking
 It is used to connect Flask ↔ Postgres using private endpoints/private network so the DB is not public.
 
 Ops responsibility:
